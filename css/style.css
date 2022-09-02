@@ -1,14 +1,18 @@
 body {
-    background-color: #f3f3f3;
+    background-color: #007ea7;
   }
   h1:first-of-type {
-    color: red;
+    color: #ffcbdb;
     font-size: 2em;
     font-weight: bold;
-    margin: 0;
+    margin: 50px;
     padding: 0;
     text-align: center;
-    height: 100px;
+    height: 50px;
+  }
+
+  .deck {
+    display: flex;
   }
 
   nav {
@@ -20,23 +24,25 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
   }
   
   nav ul li {
     display: inline;
     margin: 0;
     padding: 0;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: #000;
     font-size: 1.2em;
     padding: 10px;
     text-decoration: none;
+    color: #ffcbdb;
   }
   
   nav ul li a:hover {
-    background-color: #ccc;
+    color: #e3ffcb;
   }
   
   .copy {
@@ -74,9 +80,13 @@ body {
   }
 
 #cartContents {
-    border: 0.1rem solid blueviolet;
     width: 100px;
     height: auto;
+}
+
+.card div {
+    margin: 10px;
+    color: #e3ffcb;
 }
 
 td,
@@ -89,11 +99,15 @@ td {
     text-align: center;
 }
 
-tr:nth-child(even) {
+tr:nth-child(odd) {
     background-color: #eee;
 }
 
-th[scope="col"] {
+tr:nth-child(even) {
+    background-color: #e3ffcb;
+}
+
+th {
     background-color: #696969;
     color: #fff;
 }
@@ -120,5 +134,10 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+}
+
+
+p, li, span, legend {
+    color: #e3ffcb;
+    margin: 10px;
 }
